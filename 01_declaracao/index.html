@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Clase</title>
+</head>
+<body>
+    <button id="btnImprimir">Imprimir Forma</button>
+
+    <script src="forma.js"></script>
+    <script>
+        const Forma = new forma();
+        document.getElementById('btnImprimir').addEventListener('click', function(){
+            Forma.imprimeForma();
+        });
+    </script>
+</body>
+</html>
