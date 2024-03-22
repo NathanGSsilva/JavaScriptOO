@@ -9,10 +9,11 @@
     <button id="btnImprimir">Imprimir Forma</button>
 
     <script src="forma.js"></script>
+    <script src="quadrado.js"></script>
     <script>
-        const forma = new Forma();
+        const forminha = new Quadrado(10);
         document.getElementById('btnImprimir').addEventListener('click', function(){
-            forma.imprimeForma();
+            forminha.imprimeForma();
         });
     </script>
 </body>
