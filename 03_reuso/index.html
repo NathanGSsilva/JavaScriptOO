@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reutilização de Códigos!</title>
+</head>
+<body>
+    <button id="btnImprimir">Imprimir Forma</button>
+
+    <script src="forma.js"></script>
+    <script src="quadrado.js"></script>
+    <script src="quadrado-colorido.js"></script>
+    <script src="retangulo.js"></script>
+    <script>
+
+        // const forminha = new Quadrado(10);
+        // const forma = new Forma();
+        const forma = new Retangulo(10, 10);
+        document.getElementById('btnImprimir').addEventListener('click', function(){
+            forma.imprimeForma();
+        });
+    </script>
+</body>
+</html>
